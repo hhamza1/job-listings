@@ -22,7 +22,7 @@ Your users should be able to:
 
 #### Option 1
 
-Filter job listings based on the categories using the HTML `data-` attribute. In this option, you'd use the hardcoded content that already exists in the [index.html](./index.html) file.
+Filter job listings based on the categories using the HTML `data-` attribute.
 
 The categories are:
 
@@ -38,17 +38,5 @@ So, if a job listing is for has the following categories `Frontend, Junior, Java
 Use the [data.json](./data.json) file to pull the data and then dynamically add the content. This would be perfect if you're looking to practice a JS library/framework like React, Vue, or Svelte.
 
 To add a filter, the user needs to click on the tablets on the right-side of the listing on desktop or the bottom on mobile. For each filter added, only listings containing all selected filters should be returned.
-
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
-
-## Where to find everything
-
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design to work to. 
-
-The designs are in JPG static format. This will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. This should help train your eye to perceive differences in spacings and sizes.
-
-If you would like the Sketch file in order to inspect the design in more detail it is available to buy from the challenge page on the platform.
-
-You will find all the required assets in the `/images` folder. The assets are already optimized.
 
 **Have fun building!** 🚀
