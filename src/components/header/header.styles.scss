@@ -1,5 +1,8 @@
+@import '../../scss/variables';
+
+
 .header {
-  background-color: hsl(180, 29%, 50%);
+  background-color: $primary-color;
   max-height: 156px;
     .mobile-banner {
         width: 100vw;
