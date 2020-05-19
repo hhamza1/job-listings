@@ -32,12 +32,20 @@
 @include desktopView {
     .joblist-item {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
 
 
-
-        .logo-container {
-            position: static;
+        .job {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 25px;
+            .logo-container {
+                position: static;           
+            }
         }
     }
 

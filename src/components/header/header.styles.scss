@@ -1,4 +1,5 @@
 @import '../../scss/variables';
+@import '../../scss/mixins';
 
 
 .header {
@@ -7,4 +8,8 @@
     .mobile-banner {
         width: 100vw;
     }
+    .desktop-banner {
+      width: 100vw;
+      background-repeat: none;
+  }
 }
