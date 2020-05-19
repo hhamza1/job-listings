@@ -1,0 +1,21 @@
+@import '../../scss/variables';
+
+.tag-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 15px;
+
+
+    .tag {
+        background-color: $bg-color;
+        border: 0;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        margin-right: 15px;
+        padding: 8px;
+        font-size: 13px;
+        font-weight: 700;
+        color:  $primary-color;
+    }
+}

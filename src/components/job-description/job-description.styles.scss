@@ -1,0 +1,24 @@
+@import '../../scss/variables';
+
+.job-description {
+    border-bottom: 1px solid rgba($dgc, .5);
+    .job-details {
+        color: rgba($dgc, .7);
+        font-size: 13px;
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .job-info {
+        margin-right: 20px;
+        .info-text {
+            position: relative;
+            left: -3px;
+        }
+    }
+
+    .job-info:first-child{
+        list-style-type: none;
+    }
+}
