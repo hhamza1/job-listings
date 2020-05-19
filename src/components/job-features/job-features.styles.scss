@@ -1,10 +1,7 @@
 @import '../../scss/variables';
+@import '../../scss/mixins';
 
 .job-features{
-
-    
-
-
     .job-features-list {
         display: flex;
         flex-direction: row;
@@ -38,3 +35,4 @@
         }
     }
 }
+
