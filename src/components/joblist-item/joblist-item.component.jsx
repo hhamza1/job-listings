@@ -6,21 +6,8 @@ import Tags from '../tags/tags.component'
 
 import './joblist-item.styles.scss';
 
-class JoblistItem extends React.Component {
-    constructor(props){
-        super();
-
-    }
-
-
-
-    render(){
-
-        const {company, logo, ...otherProps} = this.props;
-    
-        console.log();
-
-        return (
+const JoblistItem =({company, logo, ...otherProps}) =>{
+    return (
             <div className="joblist-item">
                     <div className="job">
                         <div className="logo-container">
@@ -39,7 +26,5 @@ class JoblistItem extends React.Component {
                 </div>
         )
     }
-    
-}
 
 export default JoblistItem;
