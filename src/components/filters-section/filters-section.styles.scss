@@ -4,12 +4,48 @@
     border: 0;
     border-radius: 3px;
     box-shadow: 0 2px 5px rgba($dgc, .3);
+    box-sizing: border-box;;
     background-color: #fff;
-    padding: 15px 40px;
-    position: absolute;
-    top: 125px;
+    margin-bottom: 40px;
+    padding: 20px 25px;
 
-    
+    .filter-item {
+        color: $primary-color;
+        margin-right: 15px;
+        font-weight: 600;
 
+
+        .filter {
+            background-color: rgba($dgc, .1);
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            padding: 8px;
+            padding-bottom: 5px;
+        }
+
+        .remove-filter {
+            background-color: $primary-color;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            color: #fff;   
+            padding: 8px 10px 5px 10px;
+            cursor: pointer;
+            transition: background-color .3s ease-in-out;
+
+        }
+
+        .remove-filter:hover {
+            background-color: #000;
+        }
+    }
+
+
+    .clear-btn {
+        color: $primary-color;
+        font-size: 13px;
+        font-weight: 700;
+        float: right;
+        text-transform: capitalize;
+    }
 
 }

@@ -8,12 +8,17 @@ const FiltersSection = ({filters}) => {
     return (
         <div className="filters-section">
             {
-                filters ? (
+                filters.length > 0 ? (
                     filters.map((filter, key) => (
-                            <span key={key}>{filter}</span>
+                            <span className="filter-item" key={key}>
+                                <span className="filter">{filter}</span>
+                                <span className="remove-filter">
+                                    X
+                                </span>
+                            </span>
                     ))
                 ):(
-                    <span />
+                    ''
                 )
             }
             {   
