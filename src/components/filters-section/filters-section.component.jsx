@@ -4,13 +4,13 @@ import React from 'react';
 import './filters-section.styles.scss';
 
 
-const FiltersSection = ({filters}) => {
+const FiltersSection = ({filters, clearFilter, removeFilter}) => {
     return (
-        <div className="filters-section">
+        <div className={`${filters.length > 0 ? 'filters-section' : '' }`}>
             {
                 filters.length > 0 ? (
                     filters.map((filter, key) => (
-                            <span className="filter-item" key={key}>
+                            <span className="filter-item" key={key} onClick={removeFilter}>
                                 <span className="filter">{filter}</span>
                                 <span className="remove-filter">
                                     X
@@ -24,7 +24,7 @@ const FiltersSection = ({filters}) => {
             {   
 
                 filters.length > 0 ? (
-                    <a href="#" className="clear-btn">clear</a>
+                    <a href="#" className="clear-btn" onClick={clearFilter}>clear</a>
                 ):
                 ('')
             }

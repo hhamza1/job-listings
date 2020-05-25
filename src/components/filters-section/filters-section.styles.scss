@@ -4,15 +4,20 @@
     border: 0;
     border-radius: 3px;
     box-shadow: 0 2px 5px rgba($dgc, .3);
-    box-sizing: border-box;;
+    box-sizing: border-box;
     background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-bottom: 40px;
     padding: 20px 25px;
+    width: 100%;
 
     .filter-item {
         color: $primary-color;
-        margin-right: 15px;
         font-weight: 600;
+        margin-right: 10px;
+        cursor: pointer;
 
 
         .filter {
@@ -29,7 +34,6 @@
             border-bottom-right-radius: 3px;
             color: #fff;   
             padding: 8px 10px 5px 10px;
-            cursor: pointer;
             transition: background-color .3s ease-in-out;
 
         }
@@ -44,8 +48,8 @@
         color: $primary-color;
         font-size: 13px;
         font-weight: 700;
-        float: right;
         text-transform: capitalize;
+        margin-left: auto;
     }
 
 }
