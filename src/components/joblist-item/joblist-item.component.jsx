@@ -6,9 +6,9 @@ import Tags from '../tags/tags.component'
 
 import './joblist-item.styles.scss';
 
-const JoblistItem =({company, logo, ...otherProps}) =>{
+const JoblistItem =({company, logo, featured, ...otherProps}) =>{
     return (
-            <div className="joblist-item">
+            <div className={`${featured ? 'joblist-item featured' : 'joblist-item'}`}>
                     <div className="job">
                         <div className="logo-container">
                             <img
@@ -19,6 +19,7 @@ const JoblistItem =({company, logo, ...otherProps}) =>{
                         </div>
                         <JobFeatures 
                             company={company}
+                            featured={featured}
                             {...otherProps}
                         />
                         </div>
