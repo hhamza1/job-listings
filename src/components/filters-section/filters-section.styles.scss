@@ -1,4 +1,5 @@
 @import '../../scss/variables';
+@import '../../scss/mixins';
 
 .filters-section {
     border: 0;
@@ -52,4 +53,10 @@
         margin-left: auto;
     }
 
+}
+
+@include MobileView {
+    .filter-item {
+        margin-bottom: 20px;
+    }
 }
