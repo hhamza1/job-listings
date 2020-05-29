@@ -3,3 +3,9 @@
         @content;
     }
 }
+
+@mixin MobileView {
+    @media screen and (max-width: 767px){
+        @content;
+    }
+}
